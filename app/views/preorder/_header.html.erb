@@ -1,0 +1,37 @@
+<div id="header">
+  <div class="wrapper clearfix">
+  	<div class="logo pull-left">
+  		<a href="/"><%= image_tag "advlo_header_logo_color.png", alt: "Advlo" %></a>
+	</div>
+	<div class="menu_items pull-right">
+    <%= link_to "PERKS", "/#perks" %>
+    <%= link_to "HOW IT WORKS", "/#one" %>
+    <%= link_to "JOIN US", "/#middle_reserve" %>
+	</div>	
+
+  </div>
+</div>
+
+<p id="back-top">
+  <a href="#top"><%= image_tag "back_to_top.png" %></a>
+</p>
+
+<!-- SMOOTH SCROLL -->
+<script>
+$(document).ready(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top-77
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
+});
+</script>
+<!-- End of SMOOTH SCROLL -->
