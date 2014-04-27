@@ -42,6 +42,16 @@ video_embed_url: "//player.vimeo.com/video/33035011?title=0&amp;byline=0&amp;por
 # NOTE: this only works for youtube video at the moment.  If its not for youtube, then just leave this property blank
 use_video_placeholder: 
 
+
+# Payment service (amazon or wepay)
+payment_service: 'amazon'
+
+# Wepay settings
+wepay_client_id: "YOUR_WEPAY_CLIENT_ID"
+wepay_secret_key: "YOUR_WEPAY_SECRET_KEY"
+wepay_access_token: "YOUR_WEPAY_ACCESS_TOKEN"
+
+
 # Amazon settings -- you'll need an Amazon Payments account, sign up here --> http://bit.ly/SGksTv
 
 # To find your access key and secret key, head over to here --> http://bit.ly/R4I4ky (Follow that guide in the Seller Central page)
@@ -54,8 +64,8 @@ amazon_secret_key: ""
 # put code in seeds.rb, then run rake db:seed
 use_payment_options: true
 
-#What ppl see on amazon checkout
-payment_description: "Thank you for being an Advlo backer! We can't do this without you"
+#What ppl see on amazon/wepay checkout
+payment_description: "Thank you for being an Advlo backer! We can't do this without you!"
 
 # Amazon limits how much we can charge people with their Multi-Use tokens.
 # You probably should add some leeway to account for international shipping

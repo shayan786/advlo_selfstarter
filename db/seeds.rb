@@ -95,3 +95,5 @@ PaymentOption.create(
             icon_6: 'adventure.png'
         }
     ])
+
+PaymentService.create([ {name: 'amazon'}, {name: 'wepay'}])
